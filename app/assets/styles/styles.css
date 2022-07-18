@@ -1,0 +1,76 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "DM";
+}
+:root {
+  /* Primary */
+  --Soft-red: hsl(10, 79%, 65%);
+  --Cyan: hsl(186, 34%, 60%);
+  /* Neutral */
+  --Dark-brown: hsl(25, 47%, 15%);
+  --Medium-brown: hsl(2o8, 10%, 53%);
+  --Cream: hsl(27, 66%, 92%);
+  --Very-pale-orange: hsl(33, 100%, 98%);
+}
+@font-face {
+    font-family: "DM";
+    src: url(../fonts/DMSans-Regular.ttf);
+}
+@font-face {
+    font-family: "DM bold";
+    src: url(../fonts/DMSans-Bold.ttf);
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    background: var(--Cream);
+}
+
+.main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+    max-width: 500px;
+}
+.main__balance{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background: var(--Soft-red);
+    border-radius: 10px;
+    color: white;
+    margin-bottom: 20px;
+}
+.main__balance-total-text{
+    font-size: 1.4rem;
+    padding-bottom: 5px;
+}
+.main__balance-total-number{
+    font-size: 2.4rem;
+}
+.main__info{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: var(--Very-pale-orange);
+    border-radius: 10px;
+}
+.main__info-title{
+    font-size: 2.4rem;
+    
+}
+.main__info-line{
+    width: 80%;
+    border-color: 1px solid grey;
+    height: 98px;
+}
