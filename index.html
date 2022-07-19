@@ -1,44 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/png" sizes="32x32" href="./app/assets/images/favicon-32x32.png">
-  <link rel="stylesheet" href="./app/assets/styles/styles.css">
-  <title>Frontend Mentor | Expenses chart component</title>
-</head>
-<body>
-  <main class="main">
-    <header class="main__balance">
-      <div class="main__balance-total">
-        <p class="main__balance-total-text">My balance</p>
-        <h3 class="main__balance-total-number">$921.48</h3>
-      </div>
-      <div class="main__icon">
-        <img class="main__icon-logo" src="./app/assets/images/logo.svg" alt="Balance logo">
-      </div>
-    </header>
-    <section class="main__info">
-      <h3 class="main__info-title">Spending-Last 7 days</h3>
-      <div class="main__info-chart">
-        
-      </div>
-      <div class="main__info-line"></div>
-      <div class="main__info-month">
-        <div class="main__info-month-total">
-          <p class="main__info-month-total-title">Total this month:</p>
-          <h3 class="main__info-month-total-total">$478.33</h3>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./app/assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./app/assets/styles/styles.css" />
+    <title>Frontend Mentor | Expenses chart component</title>
+    <script type="module" src="./app/src/index.js"></script>
+  </head>
+  <body>
+    <main class="main">
+      <header class="main__balance">
+        <div class="main__balance-total">
+          <p class="main__balance-total-text">My balance</p>
+          <h3 class="main__balance-total-number">$921.48</h3>
         </div>
-        <div class="main__info-month-percentage">
-          <span class="main__info-month-percentage-per">+2.4%</span>
-          <p class="main__info-month-percentage-text">from last month</p>
+        <div class="main__icon">
+          <img
+            class="main__icon-logo"
+            src="./app/assets/images/logo.svg"
+            alt="Balance logo"
+          />
         </div>
-      </div>
-    </section>
-  </main>
-  <footer class="footer">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="https://www.linkedin.com/in/alan-flores-bbb458213/">Alan Israel Flores Cabrera</a>.
-  </footer>
-</body>
+      </header>
+      <section class="main__info">
+        <h3 class="main__info-title">Spending-Last 7 days</h3>
+        <div class="main__info-chart">
+          <canvas
+            width="90%"
+            height="90%"
+            class="main__info-chart-bar"
+            id="canva"
+          ></canvas>
+        </div>
+        <hr />
+        <div class="main__info-month">
+          <div class="main__info-month-total">
+            <p class="main__info-month-total-title">Total this month:</p>
+            <h3 class="main__info-month-total-total">$478.33</h3>
+          </div>
+          <div class="main__info-month-percentage">
+            <span class="main__info-month-percentage-per">+2.4%</span>
+            <p class="main__info-month-percentage-text">from last month</p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <p>
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by 
+        <a href="https://www.linkedin.com/in/alan-flores-bbb458213/">Alan Israel Flores Cabrera</a>.</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </body>
 </html>
