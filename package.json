@@ -1,0 +1,22 @@
+{
+  "name": "expenseschart",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlanF20/expensesChart.git"
+  },
+  "keywords": [],
+  "author": "Alan Israel Flores Cabrera <alanif@hotmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlanF20/expensesChart/issues"
+  },
+  "homepage": "https://github.com/AlanF20/expensesChart#readme",
+  "dependencies": {
+  }
+}
